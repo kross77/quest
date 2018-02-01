@@ -1,0 +1,102 @@
+.kvest{
+padding-top: 100px;	
+}
+.header{
+ position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 0px 30px;
+    display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}  
+.short_info {
+  position: absolute;
+  bottom: 5px;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+th {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.opis{
+	padding: 70px 200px;
+}
+.opis h2{
+  padding-bottom: 10px;
+}
+.opis p{
+	font-size: 20px;
+}
+.sbtitle{
+	padding-bottom: 10px;
+}
+@media all and (min-width: 800px){
+	
+}
+
+.imgColag {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.colag__content {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.colag__main {
+  transition: opacity 400ms linear;
+}
+
+.colag__main._visible {
+  opacity: 1;
+}
+
+.colag__main._hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.colag__picture-container {
+  position: relative;
+  max-width: 20%;
+  cursor: pointer;
+}
+
+
+.colag__picture {
+  width: 100%;
+  filter: brightness(50%);
+  transition: filter 400ms ease;
+}
+
+.colag__ramka {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
+  z-index: 4;
+  transition: transform 400ms ease;
+}
+
+.colag__picture._active {
+  filter: brightness(100%);
+}
