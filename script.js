@@ -42,4 +42,11 @@ $(document).ready(function(){
 		}
 		isDarkLayer = true;
 	});
+
+	$(document).ready(function(){
+  			$('.bigimg__container').slick({
+    			autoplay: true,
+    			autoplaySpeed: 2000,
+  			});
+		});
 });

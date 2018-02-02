@@ -2,6 +2,12 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.page__container {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .header img{
@@ -11,13 +17,15 @@
 .short_info {
   position: absolute;
   bottom: 5px;
-  left: 35px;
+  left: 5%;
+  font-size: 15px;
+
 }
 th {
   border: 2px solid #fff;
   color: #fff;
   padding: 2px 5px;
-  font-size: 30px;
+  font-size: 10px;
   font-weight: 300;
 }
 .opis{
@@ -26,12 +34,10 @@ th {
 }
 .opis h2{
   padding-bottom: 10px;
+
 }
 .otz{
   padding: 20px;
-}
-.short_info{
-	font-size: 30px;
 }
 .opis p{
 	font-size: 20px;
@@ -40,14 +46,30 @@ th {
 .imgColag {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .colag__content {
   position: relative;
-  display: inline-flex;
-  max-width: 70%;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 50%;
+}
+
+.colag__picture-choose {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.colag__content img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .colag__main {
@@ -60,11 +82,6 @@ th {
 
 .colag__main._hidden {
   opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .colag__picture-container {
@@ -79,6 +96,7 @@ th {
   filter: brightness(50%);
   transition: filter 400ms ease;
 }
+
 
 .colag__ramka {
   position: absolute;
@@ -96,11 +114,40 @@ th {
   filter: brightness(100%);
 }
 
+
 @media all and (min-width: 800px){
   .opis{
-  padding: 20px 250px 20px 20px;
-  font-size: 17px;
+    padding: 20px 250px 20px 20px;
+    font-size: 17px;
+  }
+  .header{
+   padding-top: 0px;
+ }
+ .short_info {
+   font-size: 30px;
+ }
+ th {
+  font-size: 30px;
 }
+
+.colag__content {
+  max-width: 60%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 35%;
+}
+
+.colag__picture-choose {
+  max-width: 60%;
+}
+.short_info {
+  bottom: 5px;
+  left: 35px;
+}
+
+
 }
 
 

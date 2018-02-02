@@ -1,36 +1,40 @@
 .kvest{
-padding-top: 100px;	
+  padding-top: 100px;	
 }
 .header{
  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  padding: 0px 30px;
-    display: flex;
-  flex-direction: column;
-justify-content: center;
-align-items: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ padding-top: 200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }  
 .short_info {
-  position: absolute;
-  bottom: 5px;
-  left: 500px;
   display: flex;
-  flex-direction: column;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.short-info__container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 5px;
+}
+
 th {
   border: 2px solid #fff;
   color: #fff;
   padding: 2px 5px;
-  font-size: 30px;
+  font-size: 10px;
   font-weight: 300;
 }
 .opis{
-	padding: 70px 200px;
+	padding: 30px 70px;
 }
 .opis h2{
   padding-bottom: 10px;
@@ -40,21 +44,38 @@ th {
 }
 .sbtitle{
 	padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 15px
 }
-@media all and (min-width: 800px){
-	
-}
-
 .imgColag {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .colag__content {
   position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.colag__picture-choose {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.colag__content img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .colag__main {
@@ -67,9 +88,6 @@ th {
 
 .colag__main._hidden {
   opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .colag__picture-container {
@@ -84,6 +102,7 @@ th {
   filter: brightness(50%);
   transition: filter 400ms ease;
 }
+
 
 .colag__ramka {
   position: absolute;
@@ -100,3 +119,20 @@ th {
 .colag__picture._active {
   filter: brightness(100%);
 }
+
+@media all and (min-width: 800px){
+  .opis{
+    padding: 70px 100px;
+  }
+  .header{
+    padding: 0px 30px;}
+
+    .sbtitle{
+      font-size: 35px;
+    }
+    th {
+      font-size: 30px;
+    }
+    
+  }
+

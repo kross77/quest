@@ -1,49 +1,52 @@
 * {
-  pading: 0;
-  margin: 0;
-  font-family: Arial;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	box-sizing: border-box;
 }
-body{
-  background-color: #1A1A1A;
-  color: white;}
-.verx img{
-  width: 200px;
-  height: 80px;
+
+body {
+	background-color: #1A1A1A;
+	color: white;
 }
-img{
-  max-width: 100%;
-  height: auto;
+
+.verx img {
+	width: 200px;
+	height: 80px;
 }
 
 h1, h2 {
-  color: white;
-  font-weight: 400;
-  font-style: italic;
+	color: white;
+	font-weight: 400;
+	font-style: italic;
 }
-.verx{
-  position: fixed;
-  width: 100%;
-  background-color: #121212;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  left: 0;
-  top:0;
+
+.verx {
+	position: fixed;
+	width: 100%;
+	background-color: #121212;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 0;
+	top:0;
 }
+
 .verx a {
-  font-size: 25px;
-  color: white;
-  text-decoration: none;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
 }
-a:hover{
-  color:#808080;
+
+a:hover {
+	color:#808080;
 }
+
 @media all and (min-width: 800px){
 
-  .verx{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+	.verx {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
