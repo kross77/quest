@@ -4,6 +4,10 @@
 	font-family: Arial;
 	box-sizing: border-box;
 }
+img{
+	width: 100%;
+	height: auto;
+}
 
 body {
 	background-color: #1A1A1A;
